@@ -1,7 +1,7 @@
 {
-  "name": "playwright-learn-codespaces",
+  "name": "next-movies-playwright",
   "version": "1.0.0",
-  "description": "A Playwright-enabled Codespaces repo with a basic application and test harness in place. Useful for workshops and as starter template.",
+  "description": "Guided projects to teach you Playwright testing by example",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
