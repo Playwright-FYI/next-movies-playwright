@@ -1,0 +1,52 @@
+{
+  "name": "Playwright-Learn-Nextjs",
+
+	"image": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "18"
+		},
+		"ghcr.io/devcontainers-contrib/features/npm-package:1": {
+			"package": "typescript",
+			"version": "latest"
+		},
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    }
+	},
+
+  "hostRequirements": {
+    "cpus": 4
+  },
+
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postAttachCommand": {
+    "server": "cd blog; npm run dev"
+  },
+
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "blog/pages/index.js"
+      ]
+    },
+
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright"
+      ]
+    }
+  },
+
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js Blog App",
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  "forwardPorts": [3000]
+}
