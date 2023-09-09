@@ -1,0 +1,45 @@
+{
+  "name": "movie-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "static-build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "vercel-deploy": "vercel --prod",
+    "netlify-deploy": "npm run static-build && netlify deploy --prod --dir=out",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+  },
+  "dependencies": {
+    "@artsy/fresnel": "^1.2.0",
+    "@loadable/component": "^5.13.1",
+    "clsx": "^1.1.1",
+    "next": "^12.2.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-glider": "^2.0.1",
+    "react-lazyload": "^3.0.0",
+    "react-modal-video": "^1.2.3",
+    "react-redux": "^7.2.0",
+    "react-scroll": "^1.8.1",
+    "react-select-search": "^2.0.4",
+    "redaxios": "^0.3.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "use-dark-mode": "^2.3.1"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^9.5.3",
+    "@svgr/webpack": "^5.4.0",
+    "@zeit/next-source-maps": "0.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.4.0",
+    "eslint-config-next": "^11.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6"
+  }
+}

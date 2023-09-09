@@ -1,5 +1,5 @@
 {
-  "name": "Playwright-Learn-Nextjs",
+  "name": "Testing Nextjs-Movies With Playwright",
 
 	"image": "mcr.microsoft.com/playwright:v1.37.0-jammy",
 	"features": {
@@ -24,13 +24,13 @@
   "updateContentCommand": "npm install",
   "postCreateCommand": "bash .devcontainer/post-create.sh",
   "postAttachCommand": {
-    "server": "cd blog; npm run dev"
+    "server": "cd next-movies; npm run dev"
   },
 
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "blog/pages/index.js"
+        "next-movies/README.md"
       ]
     },
 
@@ -43,7 +43,7 @@
 
   "portsAttributes": {
     "3000": {
-      "label": "Next.js Blog App",
+      "label": "TasteJS Next Movies App",
       "onAutoForward": "openPreview"
     }
   },
