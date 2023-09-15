@@ -1,7 +1,7 @@
 {
   "name": "Testing Nextjs-Movies With Playwright",
 
-	"image": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+	"image": "mcr.microsoft.com/playwright:v1.38.0-jammy",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
 			"nodeGypDependencies": true,
