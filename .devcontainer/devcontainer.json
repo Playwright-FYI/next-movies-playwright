@@ -22,15 +22,15 @@
 
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
-  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "cd next-movies; npm run dev"
+    "server": ""
   },
 
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "next-movies/README.md"
+        "README.md"
       ]
     },
 
@@ -42,11 +42,7 @@
   },
 
   "portsAttributes": {
-    "3000": {
-      "label": "TasteJS Next Movies App",
-      "onAutoForward": "openPreview"
-    }
   },
 
-  "forwardPorts": [3000]
+  "forwardPorts": []
 }

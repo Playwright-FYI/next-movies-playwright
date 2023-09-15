@@ -1,13 +1,13 @@
 # Playwright ❤️ Codespaces 
 
-A Playwright-enabled Codespaces repo with a basic application and test harness in place. Useful for workshops and as a starter template for application development.
+A Playwright-enavled Codespaces repo with a basic application and test harness in place. Useful for workshops and as a starter template for application development.
 
 <br/>
 
 ## Using Playwright: Dev Containers
 
 Using a Dev Container environment is recommended for two reasons:
- - You can use that with GitHub Codespaces online, or with Docker Desktop locally.
+ - You can use that with GitHub Codvespaces online, or with Docker Desktop locally.
  - You setup a consistent, repeatable development environment for all project users.
 
 Playwright maintains a [Docker image](https://playwright.dev/docs/docker#usage) recommended for use in your dev container.
