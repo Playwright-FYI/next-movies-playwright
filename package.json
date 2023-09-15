@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Guided projects to teach you Playwright testing by example",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "ex1" : "npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
