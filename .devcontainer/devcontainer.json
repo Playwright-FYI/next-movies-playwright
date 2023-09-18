@@ -36,8 +36,9 @@
 
     "vscode": {
       "extensions": [
-        "ms-playwright.playwright"
-      ]
+		"ms-playwright.playwright",
+		"GitHub.copilot-chat"
+	]
     }
   },
 
